@@ -12,8 +12,6 @@ This is a full stack(MERN) Project.
 
 ## Features
 
-**Pages:** Homepage, Checkout Page, Search page
-
 **Functionalities:** 
 * Fully Responsive Dashboard.
 * Users Can log in, and register.
