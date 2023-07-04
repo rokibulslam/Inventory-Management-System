@@ -52,7 +52,6 @@ Forget Password, OTP Verification, Email Verification.
 Transaction rollback method where needed.(very soon)
 * Advance RTK Query Caching for better data fetching in frontend.
 ## Challanges
-```
 * Designing the database schema for Purchase, Sale, and Return was challenging for me since it was my first experience with such a large-scale application. Although I had completed an advanced Backend course that included a module on database design, it took me about 10-15 days to analyze the requirements and create the schema.
 
 * During the project, I had to make multiple changes to the schema design. Since there was no dedicated project architect or manager, I had to handle everything myself. The CEO continuously added, edited, or removed requirements and designs throughout the project.
@@ -62,4 +61,4 @@ Transaction rollback method where needed.(very soon)
 * Dynamic product management in Purchase, Sale & Return Controller: When the user creates new Purchase/sale Return Stock product will increase dynamically. Other hand for Sale & Purchase Return stock will decrease. Every Purchase/Sale/Return can have multiple products and increase/decrease them.
 
 * Purchase, Sale, Return Details using multi-stage aggregation pipeline with $lookup operator: Yes. $lookup operator is very powerful. I need to show the purchase details. it was easy with $match. But I need the purchase product list in the purchase product collection!!! Again problem comes Co-founder told me to show up the product details. Multiple products with individual Product Name, Category, and Brand !!! Ater 2 days study the aggregation framework and MongoDB operator and with the help of chatgpt I found $push !!!!  first $match the purchase=> lookup the products=> lookup the Brand=> lookup the Category then $group purchase then inside the group $push the products come from lookup.
-```
+
