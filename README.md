@@ -62,3 +62,7 @@ Transaction rollback method where needed.(very soon)
 * Purchase, Sale, Return Details using multi-stage aggregation pipeline with $lookup operator: Yes. $lookup operator is very powerful. I need to show the purchase details. it was easy with $match. But I need the purchase product list in the purchase product collection!!! Again problem comes Co-founder told me to show up the product details. Multiple products with individual Product Name, Category, and Brand !!! Ater 2 days study the aggregation framework and MongoDB operator and with the help of chatgpt I found $push !!!!  first $match the purchase=> lookup the products=> lookup the Brand=> lookup the Category then $group purchase then inside the group $push the products come from lookup.
 
 ![Alt text](https://i.ibb.co/Lk05pw2/inventory-mockup.png "Optional title")
+![Alt text](https://i.ibb.co/27tndhP/inventory-home.png "Optional title")
+![Alt text](https://i.ibb.co/0GNcmhS/Purchase-List.png "Optional title")
+![Alt text](https://i.ibb.co/b38mhVw/create-purchase.png "Optional title")
+
